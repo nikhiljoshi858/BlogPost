@@ -1,0 +1,68 @@
+<!-- <footer class="pt-4 my-md-5 pt-md-5 border-top">
+    <style type='text/css'>
+        .footer{
+            min-height: 100px;
+        }
+
+    </style>
+    <div class="d-flex flex-row align-items-center footer">
+        <p class='m-auto'>BlogPost Website in Django | 2020 &copy;</p>
+    </div>
+</footer> -->
+{% load static %}
+<style type='text/css'>
+    @media (min-width: 768px) {
+        html {
+            font-size: 16px;
+        }
+    }
+
+    .container {
+        max-width: 960px;
+    }
+
+    .pricing-header {
+        max-width: 700px;
+    }
+
+    .card-deck .card {
+        min-width: 220px;
+    }
+    .icon{
+        height: 25px !important;
+        width: 25px !important;
+    }
+</style>
+<footer class="pt-4 my-md-5 pt-md-5 border-top">
+    <div class="row">
+        <div class="col-12 col-md">
+            <p class="d-block mb-3 text-muted">BlogPost Website built in Django | 2020 &copy;</p>
+        </div>
+        <!-- <h2 class="mx-auto">Important Links:</h2> -->
+        <div class="col-6 col-md">
+            <h5>Important Links</h5>
+            <ul class="list-unstyled text-small">
+                <li><a class="text-muted" href="{% url 'login' %}">Login</a></li>
+                <li><a class="text-muted" href="{% url 'register' %}">Register</a></li>
+                <li><a class="text-muted" href="{% url 'account' %}">Account</a></li>
+            </ul>
+        </div>
+        <div class="col-6 col-md">
+            <h5>Contact Us</h5>
+            <ul class="list-unstyled text-small">
+                <li><a class="text-muted" href="#"><img src="{% static 'whatsapp-brands.svg' %}" height="30px" width="30px"></a></li>
+                <li><a class="text-muted" href="#"><img class="mt-1" src="{% static 'facebook-brands.svg' %}" height="30px" width="30px"></a></li>
+                <li><a class="text-muted" href="#"><img class="mt-1" src="{% static 'twitter-brands.svg' %}" height="30px" width="30px"></a></li>
+                <li><a class="text-muted" href="#"><img class="mt-1" src="{% static 'gmail.png' %}" height="30px" width="30"></a></li>
+                <li><a class="text-muted" href="#"><img class="mt-1" src="{% static 'instagram-brands.svg' %}" height="30px" width="30px"></a></li>
+            </ul>
+        </div>
+        <div class="col-6 col-md">
+            <h5>About</h5>
+            <ul class="list-unstyled text-small">
+                <li><a class="text-muted" href="/about">About Us</a></li>
+                <li><a class="text-muted" href="/contact">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>

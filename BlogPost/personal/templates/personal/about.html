@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+<center>
+    <h2>About Us</h2>
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+            <img src="{% static 'logo.png' %}" alt="" height="150" width="150"><br>
+            <br><h5 class="card-title">Nikhil Joshi</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Main Developer</h6>
+            <p class="card-text">Django is my favourite Web Development Framework since I love Python. </p>
+        </div>
+    </div>
+</center>
+{% endblock %}

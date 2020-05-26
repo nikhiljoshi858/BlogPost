@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+    <h2 class="text-center">Contact Us</h2>
+    <h3>Please fill the form to get in touch with us...</h3>
+    <form>
+        <div class="form-group">
+            <label for="exampleFormControlInput1">Full Name</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Enter your name here...">
+            <label for="exampleFormControlInput1">Email address</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter your email address here...">
+            <label for="exampleFormControlInput1">Contact Number</label>
+            <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Enter your contact number here...">
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlTextarea1">Feedback</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Enter your feedback here"></textarea>
+        </div>
+        <a href="/submit" class="btn btn-primary">Submit</a>
+    </form>
+</div>
+{% endblock %}
