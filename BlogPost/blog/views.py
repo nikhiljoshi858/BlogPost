@@ -66,7 +66,6 @@ def edit_blog_view(request, slug):
 
 
 # Used for the search bar in header.html
-
 def get_blog_queryset(query=None):
     queryset = []
     queries = query.split(" ")
